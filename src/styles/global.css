@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --Navbar: #191622;
+  --Title: #4caf50;
+  --Terminal-background: #191622;
+  --Terminal-color-1: #191622;
+  --Terminal-color-2: #191622;
+  --Terminal-color-3: #191622;
+  --Terminal-color-4: #191622;
+  --Terminal-color-5: #191622;
+  --Terminal-color-6: #191622;
+  --Terminal-color-7: #191622;
+  --Terminal-color-8: #191622;
+}

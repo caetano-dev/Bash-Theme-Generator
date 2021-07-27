@@ -1,0 +1,31 @@
+.Navbar {
+  background-color: var(--Navbar);
+  color: var(--Title);
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.TerminalContainer {
+  width: 45rem;
+  height: 35rem;
+  border: 1px solid red;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+  padding: .3rem;
+}
+.neofetchContent{
+  display: flex
+}
+.archIcon > pre, .specs > pre{
+  font-family: "Source Code Pro", monospace;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.documents2 {
+  color: red;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 500;
+}
+.FirstLine, .SecondLine{ 
+  }
