@@ -9,6 +9,8 @@
     </link>
     <link rel="stylesheet" type="text/css" href="../src/styles/styles.css">
     </link>
+    <script type="module" src="../src/Colors.js"></script>
+
     <title>Console Colors</title>
 </head>
 
@@ -20,8 +22,8 @@
         <div class="FirstLine" id="FirstLine">
         </div>
         <div class="neofetchContent">
-            <div class="archIcon">
-                <pre>
+            <div>
+                <pre id="archIcon">
                      -`
                     .o+`
                    `ooo/
@@ -43,30 +45,30 @@
   .`                                  `/
 </pre>
             </div>
-            <div class="specs">
-<pre>
-    drull@archlinux 
+            <div>
+                <pre id="specs">
+    <span class="specTitle">JohnDoe</span>@<span class="specNames">archlinux</span>
     --------------- 
-    OS: Arch Linux x86_64 
-    Kernel: 5.13.5-arch1-1 
-    Uptime: 1 hour, 14 mins 
-    Packages: 1196 (pacman), 10 (snap) 
-    Shell: bash 5.1.8 
-    Resolution: 1920x1080 
-    DE: Plasma 5.22.4 
-    WM: KWin 
-    Theme: ArchLightly [Plasma], Breeze [GTK2/3] 
-    Icons: [Plasma], Fluent [GTK2/3] 
-    Terminal: konsole 
-    CPU: Intel i3-7100 (4) @ 3.900GHz 
-    GPU: NVIDIA GeForce GTX 1050 Ti 
-    Memory: 4280MiB / 7891MiB 
+    <span class="specTitle">OS</span> <span class="specNames">: Arch Linux x86_64 </span>
+    <span class="specTitle">Kernel</span><span class="specNames">: 5.13.5-arch1-1 </span>
+    <span class="specTitle">Uptime</span><span class="specNames">: 1 hour, 00 mins </span>
+    <span class="specTitle">Packages</span><span class="specNames">: 420 (pacman), 70 (snap) </span>
+    <span class="specTitle">Shell</span><span class="specNames">: bash 5.1.8 </span>
+    <span class="specTitle">Resolution</span><span class="specNames">: 1920x1080 </span>
+    <span class="specTitle">DE</span><span class="specNames">: Plasma 5.22.4 </span>
+    <span class="specTitle">WM</span><span class="specNames">: KWin </span>
+    <span class="specTitle">Theme</span><span class="specNames">: ArchLightly [Plasma], Breeze [GTK2/3] </span>
+    <span class="specTitle">Icons</span><span class="specNames">: [Plasma], Fluent [GTK2/3] </span>
+    <span class="specTitle">Terminal</span><span class="specNames">: konsole </span>
+    <span class="specTitle">CPU</span><span class="specNames">: Intel i3-7100 (4) @ 3.900GHz </span>
+    <span class="specTitle">GPU</span><span class="specNames">: NVIDIA GeForce GTX 1050 Ti </span>
+    <span class="specTitle">Memory</span><span class="specNames">: 4280MiB / 7891MiB </span>
 </pre>
             </div>
         </div>
         <div class="SecondLine" id="SecondLine">
-    </div>
+        </div>
 </body>
-<script type="text/javascript" src="../src/index.js"></script>
+<script type="module" src="../src/index.js"></script>
 
 </html>
