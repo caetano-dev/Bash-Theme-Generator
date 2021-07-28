@@ -2,30 +2,36 @@
   background-color: var(--Navbar);
   color: var(--Title);
   text-align: left;
-  padding: 0 1rem;
+  padding-left: 0.3rem;
+  font-size: 2rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
 }
-
+.TerminalContainer,
+#archIcon,
+#specs,
+.documents2 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+}
+.FirstLine,
+.SecondLine {
+  font-weight: 400;
+}
 .TerminalContainer {
   width: 45rem;
   height: 35rem;
-  border: 1px solid red;
-  font-family: "Source Code Pro", monospace;
-  font-weight: 400;
-  padding: .3rem;
+  padding: 1rem 0.3rem;
+  border-radius: 0.5rem;
 }
-.neofetchContent{
-  display: flex
+.neofetchContent {
+  display: flex;
 }
-.archIcon > pre, .specs > pre{
-  font-family: "Source Code Pro", monospace;
-  font-weight: 500;
+#archIcon,
+#specs {
   font-size: 0.8rem;
 }
-
-.documents2 {
-  color: red;
-  font-family: "Source Code Pro", monospace;
-  font-weight: 500;
+.SecondLine {
+  padding-top: 4rem;
 }
-.FirstLine, .SecondLine{ 
-  }
