@@ -1,67 +1,48 @@
 import { Colors } from "./Colors.js";
 
-const randomForeground = Math.floor(Math.random() * 546);
-const randomBackground = Math.floor(Math.random() * 546);
-const randomFolder = Math.floor(Math.random() * 546);
-const randomNeofetchColor = Math.floor(Math.random() * 546);
+function randomColor() {
+  const randomForeground = Math.floor(Math.random() * 546);
+  const randomBackground = Math.floor(Math.random() * 546);
+  const randomFolder = Math.floor(Math.random() * 546);
+  const randomNeofetchColor = Math.floor(Math.random() * 546);
+  const randomNeofetchIcon = Math.floor(Math.random() * 546);
 
-// character color
-const foreground = Colors[randomForeground];
-//background
-const background = Colors[randomBackground];
-// color5
-const folder = Colors[randomFolder];
-// neofetch icon
-const neofetchColor = Colors[randomNeofetchColor];
+  return {
+    foreground: Colors[randomForeground],
+    background: Colors[randomBackground],
+    folder: Colors[randomFolder],
+    neofetchColor: Colors[randomNeofetchColor],
+    neofetchIcon: Colors[randomNeofetchIcon],
+  };
+}
+const colors = randomColor();
 
 const TerminalContainer = document.getElementById("TerminalContainer");
-const FirstLine = document.getElementById("FirstLine");
-const SecondLine = document.getElementById("SecondLine");
+const username = document.getElementById("username");
+const neofetch = document.getElementById("neofetch");
 const ArchIcon = document.getElementById("archIcon");
-const specsTitle = document.getElementsByClassName("specTitle")
-for (var i = 0, max = specsTitle.length; i < max; i++) {
-    specsTitle[i].style.color = neofetchColor;
+const specTitle = document.getElementsByClassName("specTitle");
+for (var i = 0, max = specTitle.length; i < max; i++) {
+  specTitle[i].style.color = colors.neofetchColor;
 }
-const specNames = document.getElementsByClassName("specNames")
+const specNames = document.getElementsByClassName("specNames");
 for (var i = 0, max = specNames.length; i < max; i++) {
-    specNames[i].style.color = foreground;
+  specNames[i].style.color = colors.foreground;
 }
-TerminalContainer.style.background = background;
-SecondLine.classList.add("SecondLine");
-FirstLine.classList.add("FirstLine");
-ArchIcon.style.color = neofetchColor;
+const username2 = document.getElementById("username2");
+const atCharacter = document.getElementById("@");
+const line = document.getElementById("line");
+const ls2 = document.getElementById("ls2");
+const documents2 = document.getElementById("documents2");
+const secondDocuments2 = document.getElementById("secondDocuments2");
 
-
-//add p tag to TerminalContainer
-const username = document.createElement("span");
-username.innerHTML = "[JohnDoe@archlinux:]$";
-username.style.color = foreground;
-const neofetch = document.createElement("span");
-neofetch.innerHTML = "  neofetch";
-neofetch.style.color = foreground;
-
-//second line
-const username2 = document.createElement("span");
-username2.innerHTML = "[JohnDoe@archlinux:]$";
-username2.style.color = foreground;
-const ls2 = document.createElement("span");
-ls2.innerHTML = " ls";
-ls2.style.color = foreground;
-
-const documents2 = document.createElement("pre");
-documents2.innerHTML = "Desktop    Downloads  Pictures  Templates  snap";
-const secondDocuments2 = document.createElement("pre");
-secondDocuments2.innerHTML = "Documents  Music      Public    Videos     snapd";
-documents2.classList.add("documents2");
-documents2.style.color = folder;
-secondDocuments2.classList.add("documents2");
-secondDocuments2.style.color = folder;
-
-//append p tag to TerminalContainer
-FirstLine.appendChild(username);
-FirstLine.appendChild(neofetch);
-
-SecondLine.appendChild(username2);
-SecondLine.appendChild(ls2);
-SecondLine.appendChild(documents2);
-SecondLine.appendChild(secondDocuments2);
+TerminalContainer.style.background = colors.background;
+ArchIcon.style.color = colors.neofetchColor;
+username.style.color = colors.foreground;
+neofetch.style.color = colors.foreground;
+atCharacter.style.color = colors.foreground;
+line.style.color = colors.foreground;
+username2.style.color = colors.foreground;
+ls2.style.color = colors.foreground;
+documents2.style.color = colors.folder;
+secondDocuments2.style.color = colors.folder;

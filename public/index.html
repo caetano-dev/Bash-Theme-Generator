@@ -20,6 +20,8 @@
     </nav>
     <div class="TerminalContainer" id="TerminalContainer">
         <div class="FirstLine" id="FirstLine">
+            <span id="username">[JohnDoe@archlinux:]$</span>
+            <span id="neofetch">neofetch</span>
         </div>
         <div class="neofetchContent">
             <div>
@@ -47,8 +49,8 @@
             </div>
             <div>
                 <pre id="specs">
-    <span class="specTitle">JohnDoe</span>@<span class="specNames">archlinux</span>
-    --------------- 
+    <span class="specTitle">JohnDoe</span><span id="@">@</span><span class="specTitle">archlinux</span>
+    <span id="line">---------------</span>
     <span class="specTitle">OS</span> <span class="specNames">: Arch Linux x86_64 </span>
     <span class="specTitle">Kernel</span><span class="specNames">: 5.13.5-arch1-1 </span>
     <span class="specTitle">Uptime</span><span class="specNames">: 1 hour, 00 mins </span>
@@ -67,6 +69,10 @@
             </div>
         </div>
         <div class="SecondLine" id="SecondLine">
+            <span id="username2">[JohnDoe@archlinux:]$</span>
+            <span id="ls2" class="folder"> ls</span>
+            <pre id="documents2" class="documents2">Desktop    Downloads  Pictures  Templates  snap</pre>
+            <pre id="secondDocuments2" class="documents2">Documents  Music      Public    Videos     snapd</pre>
         </div>
 </body>
 <script type="module" src="../src/index.js"></script>
