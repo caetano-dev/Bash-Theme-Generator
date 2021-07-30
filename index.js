@@ -1,4 +1,4 @@
-import { Colors } from "./Colors.js";
+import { Colors } from "./Colors.js"
 
 function randomColor() {
   const randomForeground = Math.floor(Math.random() * 546);
