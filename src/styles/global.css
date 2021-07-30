@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap");
 * {
   padding: 0;
   box-sizing: border-box;
   margin: 0;
+  font-family: "Source Code Pro", monospace;
 }
 
 :root {
   --Navbar: #191622;
   --Title: #4caf50;
+  --Button: #ff7b00;
+  --TableHeader: #87ceeb;
 }
