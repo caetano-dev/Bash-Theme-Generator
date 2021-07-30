@@ -18,14 +18,16 @@
     <nav class="Navbar">
         <h1>Console Color Generator</h1>
     </nav>
-    <div class="TerminalContainer" id="TerminalContainer">
-        <div class="FirstLine" id="FirstLine">
-            <span id="username">[JohnDoe@archlinux:]$</span>
-            <span id="neofetch">neofetch</span>
-        </div>
-        <div class="neofetchContent">
-            <div>
-                <pre id="archIcon">
+    <div class="container">
+        <aside>
+            <div class="TerminalContainer" id="TerminalContainer">
+                <div class="FirstLine" id="FirstLine">
+                    <span id="username">[JohnDoe@archlinux:]$</span>
+                    <span id="neofetch">neofetch</span>
+                </div>
+                <div class="neofetchContent">
+                    <div>
+                        <pre id="archIcon">
                      -`
                     .o+`
                    `ooo/
@@ -46,9 +48,9 @@
    `++:.                           `-/+/
   .`                                  `/
 </pre>
-            </div>
-            <div>
-                <pre id="specs">
+                    </div>
+                    <div>
+                        <pre id="specs">
     <span class="specTitle">JohnDoe</span><span id="@">@</span><span class="specTitle">archlinux</span>
     <span id="line">---------------</span>
     <span class="specTitle">OS</span> <span class="specNames">: Arch Linux x86_64 </span>
@@ -66,14 +68,36 @@
     <span class="specTitle">GPU</span><span class="specNames">: NVIDIA GeForce GTX 1050 Ti </span>
     <span class="specTitle">Memory</span><span class="specNames">: 4280MiB / 7891MiB </span>
 </pre>
+                    </div>
+                </div>
+                <div class="SecondLine" id="SecondLine">
+                    <span id="username2">[JohnDoe@archlinux:]$</span>
+                    <span id="ls2" class="folder"> ls</span>
+                    <pre id="documents2" class="documents2">Desktop    Downloads  Pictures  Templates  snap</pre>
+                    <pre id="secondDocuments2" class="documents2">Documents  Music      Public    Videos     snapd</pre>
+                </div>
             </div>
-        </div>
-        <div class="SecondLine" id="SecondLine">
-            <span id="username2">[JohnDoe@archlinux:]$</span>
-            <span id="ls2" class="folder"> ls</span>
-            <pre id="documents2" class="documents2">Desktop    Downloads  Pictures  Templates  snap</pre>
-            <pre id="secondDocuments2" class="documents2">Documents  Music      Public    Videos     snapd</pre>
-        </div>
+        </aside>
+        <aside class="secondAside">
+            <div class="buttonContainer">
+                <button id="button">Generate new colors</button>
+            </div>
+            <table class="colorTable">
+                <tr>
+                    <th>Foreground</th>
+                    <th>Background</th>
+                    <th>Neofetch (intense color 7)</th>
+                    <th>Folder (intense color 5)</th>
+                </tr>
+                <tr>
+                    <td id="foregroundTable">color</td>
+                    <td id="backgroundTable">color</td>
+                    <td id="neofetchTable">color</td>
+                    <td id="folderTable">color</td>
+                </tr>
+            </table>
+        </aside>
+    </div>
 </body>
 <script type="module" src="../src/index.js"></script>
 
