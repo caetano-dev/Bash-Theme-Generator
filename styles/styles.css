@@ -1,18 +1,19 @@
-html {
+body {
   background-color: var(--Background);
 }
-.container {
+.container,
+.Navbar,
+.secondAside,
+.secondAside > div {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Navbar {
   background-color: var(--Navbar);
   color: var(--Title);
-  text-align: left;
-  padding-left: 1rem;
   font-size: 2rem;
   height: 5rem;
-  display: flex;
-  align-items: center;
 }
 .TerminalContainer,
 #archIcon,
@@ -27,12 +28,15 @@ button {
 }
 .TerminalContainer {
   width: 45rem;
-  height: 35rem;
-  padding: 1rem 0.3rem;
-  margin: 1rem;
-  border-radius: 0.5rem;
-  transition: 0.4s;
+  box-shadow: 0.5rem 0.5rem 4px rgba(0, 0, 0, 0.171);
   border-top: 2rem solid var(--Border);
+}
+.TerminalContainer,
+.secondAside {
+  height: 35rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 2rem 1rem;
 }
 .neofetchContent {
   display: flex;
@@ -44,24 +48,21 @@ button {
 .SecondLine {
   padding-top: 4rem;
 }
+.secondAside {
+  box-shadow: 0.5rem 0.5rem 4px rgba(0, 0, 0, 0.171);
+  background-color: var(--SecondaryBackground);
+  border-top: 2rem solid var(--Border);
+}
 .secondAside,
 .secondAside > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.secondAside > div {
-  background-color: var(--SecondaryBackground);
   flex-direction: column;
-  border-radius: 0.5rem;
-  padding: 2rem;
 }
 .secondAside h2 {
   color: white;
 }
 button {
-  width: 16rem;
-  height: 4.5rem;
+  width: 10rem;
+  height: 3rem;
   margin: 5rem 0rem;
   outline: none;
   border: none;
@@ -69,6 +70,12 @@ button {
   background-color: var(--Button);
   cursor: pointer;
   font-size: 1.5rem;
+}
+.TerminalContainer,
+button,
+table,
+th,
+td {
   transition: 0.4s;
 }
 button:hover {
@@ -81,7 +88,6 @@ td {
   height: 2rem;
   text-align: center;
   padding: 0.5rem;
-  transition: 0.4s;
 }
 th {
   background-color: var(--TableHeader);
