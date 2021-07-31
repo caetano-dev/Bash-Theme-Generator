@@ -4,13 +4,13 @@ function randomColor() {
   const randomForeground = Math.floor(Math.random() * 546);
   const randomBackground = Math.floor(Math.random() * 546);
   const randomFolder = Math.floor(Math.random() * 546);
-  const randomNeofetchColor = Math.floor(Math.random() * 546);
+  const randomNeofetch = Math.floor(Math.random() * 546);
 
   return {
     foreground: Colors[randomForeground],
     background: Colors[randomBackground],
     folder: Colors[randomFolder],
-    neofetchColor: Colors[randomNeofetchColor],
+    neofetch: Colors[randomNeofetch],
   };
 }
 let colors = randomColor();
@@ -32,7 +32,7 @@ const backgroundTable = document.getElementById("backgroundTable");
 const neofetchTable = document.getElementById("neofetchTable");
 const folderTable = document.getElementById("folderTable");
 for (var i = 0, max = specTitle.length; i < max; i++) {
-  specTitle[i].style.color = colors.neofetchColor;
+  specTitle[i].style.color = colors.neofetch;
 }
 const specNames = document.getElementsByClassName("specNames");
 for (var i = 0, max = specNames.length; i < max; i++) {
@@ -42,7 +42,7 @@ for (var i = 0, max = specNames.length; i < max; i++) {
 function getColors() {
   colors = randomColor();
   TerminalContainer.style.background = colors.background;
-  ArchIcon.style.color = colors.neofetchColor;
+  ArchIcon.style.color = colors.neofetch;
   username.style.color = colors.foreground;
   neofetch.style.color = colors.foreground;
   atCharacter.style.color = colors.foreground;
@@ -52,7 +52,7 @@ function getColors() {
   documents2.style.color = colors.folder;
   secondDocuments2.style.color = colors.folder;
   for (var i = 0, max = specTitle.length; i < max; i++) {
-    specTitle[i].style.color = colors.neofetchColor;
+    specTitle[i].style.color = colors.neofetch;
   }
   for (var i = 0, max = specNames.length; i < max; i++) {
     specNames[i].style.color = colors.foreground;
@@ -64,8 +64,8 @@ function getColors() {
   backgroundTable.innerHTML = colors.background;
   backgroundTable.style.backgroundColor = colors.background;
 
-  neofetchTable.innerHTML = colors.neofetchColor;
-  neofetchTable.style.backgroundColor = colors.neofetchColor;
+  neofetchTable.innerHTML = colors.neofetch;
+  neofetchTable.style.backgroundColor = colors.neofetch;
 
   folderTable.innerHTML = colors.folder;
   folderTable.style.backgroundColor = colors.folder;
