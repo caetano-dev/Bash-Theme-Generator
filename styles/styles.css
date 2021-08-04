@@ -104,3 +104,8 @@ td:first-child {
 td:last-child {
   border-radius: 0 0 0.5rem 0;
 }
+@media screen and (max-width: 1600px) {
+  .container {
+    flex-direction: column;
+  }
+}
