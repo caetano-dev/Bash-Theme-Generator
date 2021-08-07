@@ -31,6 +31,12 @@ const foregroundTable = document.getElementById("foregroundTable");
 const backgroundTable = document.getElementById("backgroundTable");
 const neofetchTable = document.getElementById("neofetchTable");
 const folderTable = document.getElementById("folderTable");
+const foregroundTitle = document.getElementById("foregroundTitle");
+const backgroundTitle = document.getElementById("backgroundTitle");
+const neofetchTitle = document.getElementById("neofetchTitle");
+const folderTitle = document.getElementById("folderTitle");
+
+
 for (var i = 0, max = specTitle.length; i < max; i++) {
   specTitle[i].style.color = colors.neofetch;
 }
@@ -57,16 +63,19 @@ function getColors() {
   for (var i = 0, max = specNames.length; i < max; i++) {
     specNames[i].style.color = colors.foreground;
   }
-  
+  foregroundTitle.style.backgroundColor = colors.foreground;
   foregroundTable.innerHTML = colors.foreground;
   foregroundTable.style.backgroundColor = colors.foreground;
 
+  backgroundTitle.style.backgroundColor = colors.background
   backgroundTable.innerHTML = colors.background;
   backgroundTable.style.backgroundColor = colors.background;
 
+  neofetchTitle.style.backgroundColor = colors.neofetch;
   neofetchTable.innerHTML = colors.neofetch;
   neofetchTable.style.backgroundColor = colors.neofetch;
 
+  folderTitle.style.backgroundColor = colors.folder;
   folderTable.innerHTML = colors.folder;
   folderTable.style.backgroundColor = colors.folder;
 }
