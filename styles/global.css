@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   padding: 0;
   box-sizing: border-box;
@@ -9,10 +11,9 @@
 :root {
   --Navbar: #191622;
   --Background: #252031;
-  --SecondaryBackground: #362b50;
+  --SecondaryBackground: #241f2e;
   --Title: #4caf50;
-  --Button: #ff7b00;
-  --ButtonHover: #ff912a;
+  --ButtonHover: #00ff08;
   --TableHeader: #87ceeb;
   --Border: #1A1C20;
 }
