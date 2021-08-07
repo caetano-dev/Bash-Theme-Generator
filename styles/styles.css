@@ -26,7 +26,7 @@ button {
 .SecondLine {
   font-weight: 400;
 }
-.TerminalContainer {
+.TerminalContainer,.secondAside {
   width: 45rem;
   box-shadow: 0.5rem 0.5rem 4px rgba(0, 0, 0, 0.171);
   border-top: 2rem solid var(--Border);
@@ -49,9 +49,7 @@ button {
   padding-top: 4rem;
 }
 .secondAside {
-  box-shadow: 0.5rem 0.5rem 4px rgba(0, 0, 0, 0.171);
   background-color: var(--SecondaryBackground);
-  border-top: 2rem solid var(--Border);
 }
 .secondAside,
 .secondAside > div {
@@ -60,6 +58,9 @@ button {
 .secondAside h2 {
   color: white;
 }
+.secondAside h2, button {
+  font-family: 'Roboto', sans-serif;
+}
 button {
   width: 10rem;
   height: 3rem;
@@ -67,7 +68,7 @@ button {
   outline: none;
   border: none;
   border-radius: 0.5rem;
-  background-color: var(--Button);
+  background-color: var(--Title);
   cursor: pointer;
   font-size: 1.5rem;
 }
@@ -88,9 +89,6 @@ td {
   height: 2rem;
   text-align: center;
   padding: 0.5rem;
-}
-th {
-  background-color: var(--TableHeader);
 }
 th:first-child {
   border-radius: 0.5rem 0 0 0;
