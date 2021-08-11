@@ -26,7 +26,8 @@ button {
 .SecondLine {
   font-weight: 400;
 }
-.TerminalContainer,.secondAside {
+.TerminalContainer,
+.secondAside {
   width: 45rem;
   box-shadow: 0.5rem 0.5rem 4px rgba(0, 0, 0, 0.171);
   border-top: 2rem solid var(--Border);
@@ -58,8 +59,9 @@ button {
 .secondAside h2 {
   color: white;
 }
-.secondAside h2, button {
-  font-family: 'Roboto', sans-serif;
+.secondAside h2,
+button {
+  font-family: "Roboto", sans-serif;
 }
 button {
   width: 10rem;
@@ -101,6 +103,68 @@ td:first-child {
 }
 td:last-child {
   border-radius: 0 0 0.5rem 0;
+}
+.TerminalContainer {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    width: 0rem;
+  }
+  100% {
+    opacity: 1;
+    height: 35rem;
+    width: 45rem;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    width: 0rem;
+  }
+  100% {
+    opacity: 1;
+    height: 35rem;
+    width: 45rem;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    width: 0rem;
+  }
+  100% {
+    opacity: 1;
+    height: 35rem;
+    width: 45rem;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    width: 0rem;
+  }
+  100% {
+    opacity: 1;
+    height: 35rem;
+    width: 45rem;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    width: 0rem;
+  }
+  100% {
+    opacity: 1;
+    height: 35rem;
+    width: 45rem;
+  }
 }
 @media screen and (max-width: 1600px) {
   .container {
