@@ -1,19 +1,4 @@
-import { Colors } from "./Colors.js"
-
-function randomColor() {
-  const randomForeground = Math.floor(Math.random() * 546);
-  const randomBackground = Math.floor(Math.random() * 546);
-  const randomFolder = Math.floor(Math.random() * 546);
-  const randomNeofetch = Math.floor(Math.random() * 546);
-
-  return {
-    foreground: Colors[randomForeground],
-    background: Colors[randomBackground],
-    folder: Colors[randomFolder],
-    neofetch: Colors[randomNeofetch],
-  };
-}
-let colors = randomColor();
+import { Colors } from "./Colors.js";
 
 const TerminalContainer = document.getElementById("TerminalContainer");
 const username = document.getElementById("username");
@@ -36,17 +21,35 @@ const backgroundTitle = document.getElementById("backgroundTitle");
 const neofetchTitle = document.getElementById("neofetchTitle");
 const folderTitle = document.getElementById("folderTitle");
 
+function generateColor() {
+  return Math.floor(Math.random() * 546);
+}
 
-for (var i = 0, max = specTitle.length; i < max; i++) {
+function AsignRandomColor() {
+  const randomForeground = generateColor(),
+    randomBackground = generateColor(),
+    randomFolder = generateColor(),
+    randomNeofetch = generateColor();
+
+  return {
+    foreground: Colors[randomForeground],
+    background: Colors[randomBackground],
+    folder: Colors[randomFolder],
+    neofetch: Colors[randomNeofetch],
+  };
+}
+let colors = AsignRandomColor();
+
+for (let i = 0, max = specTitle.length; i < max; i++) {
   specTitle[i].style.color = colors.neofetch;
 }
 const specNames = document.getElementsByClassName("specNames");
-for (var i = 0, max = specNames.length; i < max; i++) {
+for (let i = 0, max = specNames.length; i < max; i++) {
   specNames[i].style.color = colors.foreground;
 }
 
 function getColors() {
-  colors = randomColor();
+  colors = AsignRandomColor();
   TerminalContainer.style.background = colors.background;
   ArchIcon.style.color = colors.neofetch;
   username.style.color = colors.foreground;
@@ -57,17 +60,17 @@ function getColors() {
   ls2.style.color = colors.foreground;
   documents2.style.color = colors.folder;
   secondDocuments2.style.color = colors.folder;
-  for (var i = 0, max = specTitle.length; i < max; i++) {
+  for (let i = 0, max = specTitle.length; i < max; i++) {
     specTitle[i].style.color = colors.neofetch;
   }
-  for (var i = 0, max = specNames.length; i < max; i++) {
+  for (let i = 0, max = specNames.length; i < max; i++) {
     specNames[i].style.color = colors.foreground;
   }
   foregroundTitle.style.backgroundColor = colors.foreground;
   foregroundTable.innerHTML = colors.foreground;
   foregroundTable.style.backgroundColor = colors.foreground;
 
-  backgroundTitle.style.backgroundColor = colors.background
+  backgroundTitle.style.backgroundColor = colors.background;
   backgroundTable.innerHTML = colors.background;
   backgroundTable.style.backgroundColor = colors.background;
 
