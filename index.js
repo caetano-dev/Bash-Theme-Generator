@@ -5,6 +5,7 @@ const username = document.getElementById("username");
 const neofetch = document.getElementById("neofetch");
 const ArchIcon = document.getElementById("archIcon");
 const specTitle = document.getElementsByClassName("specTitle");
+const specNames = document.getElementsByClassName("specNames");
 const username2 = document.getElementById("username2");
 const atCharacter = document.getElementById("@");
 const line = document.getElementById("line");
@@ -39,14 +40,6 @@ function AsignRandomColor() {
   };
 }
 let colors = AsignRandomColor();
-
-for (let i = 0, max = specTitle.length; i < max; i++) {
-  specTitle[i].style.color = colors.neofetch;
-}
-const specNames = document.getElementsByClassName("specNames");
-for (let i = 0, max = specNames.length; i < max; i++) {
-  specNames[i].style.color = colors.foreground;
-}
 
 function getColors() {
   colors = AsignRandomColor();
