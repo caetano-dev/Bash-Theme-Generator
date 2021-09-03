@@ -44,7 +44,7 @@ button {
 }
 #archIcon,
 #specs {
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 .SecondLine {
   padding-top: 4rem;
@@ -167,7 +167,27 @@ td:last-child {
   }
 }
 @media screen and (max-width: 1600px) {
+ .container {
+    flex-direction: column;
+  } 
+}
+@media screen and (max-width: 800px) {
+  body{
+    font-size: 75%;
+  }
   .container {
     flex-direction: column;
   }
+  .TerminalContainer,
+  .secondAside {
+    width: 95%;
+    height: 30rem;
+  }
 }
+
+@media screen and (max-width: 500px) {
+  body{
+    font-size: 65%;
+  }
+}
+
