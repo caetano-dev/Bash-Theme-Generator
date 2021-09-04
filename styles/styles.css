@@ -167,27 +167,86 @@ td:last-child {
   }
 }
 @media screen and (max-width: 1600px) {
- .container {
-    flex-direction: column;
-  } 
-}
-@media screen and (max-width: 800px) {
-  body{
-    font-size: 75%;
-  }
   .container {
     flex-direction: column;
   }
+}
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 75%;
+  }
+  .Navbar {
+    font-size: 1.5rem;
+  }
   .TerminalContainer,
   .secondAside {
-    width: 95%;
+    width: 35rem;
     height: 30rem;
   }
-}
-
-@media screen and (max-width: 500px) {
-  body{
-    font-size: 65%;
+  @keyframes fadeIn {
+    100% {
+      height: 30rem;
+      width: 35rem;
+    }
+  }
+  @-moz-keyframes fadeIn {
+    100% {
+      height: 30rem;
+      width: 35rem;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    100% {
+      height: 30rem;
+      width: 35rem;
+    }
+  }
+  @-o-keyframes fadeIn {
+    100% {
+      height: 30rem;
+      width: 35rem;
+    }
+  }
+  @-ms-keyframes fadeIn {
+    100% {
+      height: 30rem;
+      width: 35rem;
+    }
   }
 }
-
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 65%;
+  }
+  .Navbar {
+    font-size: 1rem;
+  }
+  .TerminalContainer {
+    width: 30rem;
+  }
+  @keyframes fadeIn {
+    100% {
+      width: 30rem;
+    }
+  }
+  @-moz-keyframes fadeIn {
+    100% {
+      width: 30rem;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    100% {
+      width: 30rem;
+    }
+  }
+  @-o-keyframes fadeIn {
+    100% {
+      width: 30rem;
+    }
+  }
+  @-ms-keyframes fadeIn {
+    100% {
+      width: 30rem;
+    }
+  }
+}
